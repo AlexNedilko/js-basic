@@ -407,12 +407,104 @@
 // getNameLength("Joe");
 
 // -------  exercize - mod1 #31   ---------
-const courseTopic = "JavaScript essentials";
-// Change code below this line
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+// console.log(lastElement);
+// // Change code above this line
 
-const courseTopicLength = courseTopic.length;
-const firstElement = courseTopic[0];
-const lastElement = courseTopic[courseTopic.length - 1];
+// -------  exercize - mod1 #32   ---------
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+//   console.log(substring);
+//   return substring;
+// }
+// getSubstring("Hello world", 3);
+// getSubstring("Hello world", 6);
+// getSubstring("Hello world", 8);
+// getSubstring("Hello world", 11);
+// getSubstring("Hello world", 0);
 
-console.log(lastElement);
-// Change code above this line
+// -------  exercize - mod1 #33   ---------
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   result =
+//     maxLength < message.length ? `${message.slice(0, maxLength)}...` : message;
+//   // Change code above this line
+//   return result;
+// }
+// formatMessage("Curabitur ligula sapien", 16);
+// formatMessage("Curabitur ligula sapien", 23);
+// formatMessage("Vestibulum facilisis purus nec", 20);
+// formatMessage("Vestibulum facilisis purus nec", 30);
+
+// -------  exercize - mod1 #34   ---------
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   return normalizedInput;
+// }
+
+// -------  exercize - mod1 #35   ---------
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name); // Change this line
+//   return result;
+// }
+
+// -------  exercize - mod1 #36   ---------
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   result =
+//     message.toLowerCase().includes("spam") ||
+//     message.toLowerCase().includes("sale");
+//   // Change code above this line
+//   console.log(result);
+//   return result;
+// }
+// checkForSpam("Latest technology news");
+// checkForSpam("JavaScript weekly newsletter");
+// checkForSpam("Get best sale offers now!");
+// checkForSpam("Amazing SalE, only tonight!");
+
+// -------  exercize - mod2 #1   ---------
+// function checkAge(age) {
+//   if (age >= 18) {
+//     // Change this line
+//     return "You are an adult";
+//   }
+//   return "You are a minor";
+// }
+// checkAge(5);
+// console.log(message);
+
+// -------  exercize - mod2 #2   ---------
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   // Change code below this line
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }
+//   return "Access denied, wrong password!";
+//   // Change code above this line
+// }
+
+// -------  exercize - mod2 #2   ---------
+function checkStorage(available, ordered) {
+  // Change code below this line
+  let message;
+
+  if (ordered === 0) {
+    return "Your order is empty!";
+  } else if (ordered > available) {
+    message = "Your order is too large, not enough goods in stock!";
+  } else {
+    message = "The order is accepted, our manager will contact you";
+  }
+
+  return message;
+  // Change code above this line
+}
