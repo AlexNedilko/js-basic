@@ -493,18 +493,316 @@
 // }
 
 // -------  exercize - mod2 #2   ---------
-function checkStorage(available, ordered) {
-  // Change code below this line
-  let message;
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+//   // Change code above this line
+// }
 
-  if (ordered === 0) {
-    return "Your order is empty!";
-  } else if (ordered > available) {
-    message = "Your order is too large, not enough goods in stock!";
-  } else {
-    message = "The order is accepted, our manager will contact you";
-  }
+// -------  exercize - mod2 #4   ---------
+// const fruits = ["apple", "plum", "pear", "orange"];
 
-  return message;
-  // Change code above this line
-}
+// -------  exercize - mod2 #5   ---------
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[fruits.length - 1];
+// // Change code below this line
+
+// -------  exercize - mod2 #6   ---------
+// const fruits = ["apple", "plum", "pear", "orange"];
+// console.table(fruits);
+// // Write your code under this line
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+// console.table(fruits);
+
+// -------  exercize - mod2 #7   ---------
+// const fruits = ["apple", "peach", "pear", "banana"];
+// // Change code below this line
+// const fruitsArrayLength = fruits.length;
+// console.log(fruitsArrayLength);
+
+// -------  exercize - mod2 #8   ---------
+// const fruits = ["apple", "peach", "pear", "banana"];
+// // Change code below this line
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+// -------  exercize - mod2 #9   ---------
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   const firstElement = array[0];
+//   const lastElement = array[array.length - 1];
+//   return [firstElement, lastElement];
+//   // Change code above this line
+//   console.log(firstElement, lastElement);
+// }
+// getExtremeElements([1, 2, 3, 4, 5]);
+
+// -------  exercize - mod2 #10   ---------
+// function splitMessage(message, delimeter) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(delimeter);
+//   // Change code above this line
+//   return words;
+// }
+
+// -------  exercize - mod2 #11   ---------
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+//   let total = 0;
+//   let messageSplit = message.split(" ");
+//   total = messageSplit.length * pricePerWord;
+//   console.log(total);
+//   return total;
+//   // Change code above this line
+// }
+// calculateEngravingPrice("JavaScript is in my blood", 10);
+
+// -------  exercize - mod2 #12   ---------
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   // Change code below this line
+//   return array.join(delimeter);
+//   // Change code above this line
+//   return string;
+// }
+
+// -------  exercize - mod2 #13   ---------
+// function slugify(title) {
+//   // Change code below this line
+//   let slug;
+//   slug = title.split(" ").join("-").toLowerCase();
+//   console.log(slug);
+//   return slug;
+//   // Change code above this line
+// }
+// slugify("Arrays for begginers");
+
+// -------  exercize - mod2 #14   ---------
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(-3);
+
+// -------  exercize - mod2 #15   ---------
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Peach", "Houston"];
+// const allClients = oldClients.concat(newClients); // Change this line
+// console.log(allClients);
+
+// -------  exercize - mod2 #16   ---------
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//   let newArray;
+//   newArray = firstArray.concat(secondArray).slice(0, maxLength);
+//   console.log(newArray);
+//   return newArray;
+//   // Change code above this line
+// }
+// makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 2);
+
+// -------  exercize - mod2 #17   ---------
+// const start = 3;
+// const end = 7;
+// for (let i = start; i <= end; i += 1) {
+//   // Change this line
+//   console.log(i);
+// }
+
+// -------  exercize - mod2 #18   ---------
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let total = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     total += i;
+//   }
+//   return total;
+//   // Change code above this line
+// }
+// calculateTotal(15);
+
+// -------  exercize - mod2 #19   ---------
+// const fruits = ["apple", "plum", "pear", "orange"];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// -------  exercize - mod2 #20   ---------
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     const price = order[i];
+//     total += price;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+// -------  exercize - mod2 #21   ---------
+// function findLongestWord(string) {
+//   // Change code below this line
+//   let words = string.split(" ");
+//   let longestWord = "";
+//   for (let i = 0; i < words.length; i += 1) {
+//     if (words[i].length > longestWord.length) {
+//       longestWord = words[i];
+//     }
+//   }
+//   console.log(longestWord);
+//   return longestWord;
+//   // Change code above this line
+// }
+// findLongestWord("The quick brown fox jumped overdfsfd the lazysdfsfsdfsfd dog");
+
+// -------  exercize - mod2 #22   ---------
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//     console.log(i);
+//   }
+//   // Change code above this line
+//   console.log("Numbers - ", numbers);
+//   return numbers;
+// }
+// createArrayOfNumbers(14, 17);
+
+// -------  exercize - mod2 #23   ---------
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   let filtered = [];
+//   for (const number of numbers) {
+//     if (number <= value) {
+//       continue;
+//     }
+//     filtered.push(number);
+//     console.log(number);
+//     console.log(filtered);
+//   }
+//   return filtered;
+//   // Change code above this line
+// }
+// filterArray([1, 2, 3, 4, 5], 3);
+// filterArray([12, 24, 8, 41, 76], 38);
+
+// -------  exercize - mod2 #24   ---------
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// -------  exercize - mod2 #25   ---------
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const commonArray = [];
+//   for (const element of array1) {
+//     if (array2.includes(element)) {
+//       commonArray.push(element);
+//     }
+//     console.log(element);
+//   }
+//   console.log(commonArray);
+//   return commonArray;
+//   // Change code above this line
+// }
+// getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+
+// -------  exercize - mod2 #26   ---------
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (const price of order) {
+//     total += price;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+// -------  exercize - mod2 #27   ---------
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+//     for (const number of numbers) {
+//     //   for (let i = 0; i < numbers.length; i += 1) {
+//     // const number = numbers[i];
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// -------  exercize - mod2 #28   ---------
+
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 3;
+
+// -------  exercize - mod2 #29   ---------
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   const evenNumbers = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 !== 0) {
+//       continue;
+//     }
+//     evenNumbers.push(i);
+//   }
+//   return evenNumbers;
+//   // Change code above this line
+// }
+// getEvenNumbers(3, 11);
+
+// -------  exercize - mod2 #30   ---------
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i <= end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// -------  exercize - mod2 #31   ---------
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+//   // Change code above this line
+// }
+
+// -------  exercize - mod2 #32   ---------
+// function includes(array, value) {
+//   // Change code below this line
+//   for (let i = 0; i <= array.length - 1; i += 1) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
