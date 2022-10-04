@@ -11,3 +11,4 @@ if (options.indexOf(choice) === -1) {
 }
 
 // how to check var matching the funtion aray with method?
+// is included method?
